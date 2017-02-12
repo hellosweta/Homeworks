@@ -55,13 +55,42 @@
           <li>Arrange on a baking sheet and drizzle with olive oil and a pinch of sea salt. Roast for 5-10 minutes, turning once or twice, until the eggplant is softened and golden brown. Remove from pan, stack and wrap the rounds in foil to lock in moisture – wait 5 minutes.</li>
           <li>Peel away most of the skin of the eggplant (a little is OK) and add flesh to a food processor. It should be soft and tender and the skin should come off easy.</li>
           <li>Add lemon juice, garlic, tahini, a pinch of salt and mix until creamy. Add herbs last and pulse to incorporate. Taste and adjust seasonings as needed. I added a bit more tahini and another pinch of salt.</li>
-          <li>Serve with pita and/or pita chips and veggies. Will keep covered in the fridge for several days.</li>
-
+          <li>
+            Serve with pita and/or pita chips and veggies. Will keep covered in the fridge for several days.
+          </li>
         </ol>
       </section>
+      <section id="reviews">
+        <h2>Reviews</h2>
+          <form action="/reviews"method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name = "name">
+            <label for="rating">Rating</label>
+            1<input type= "radio" name = "rating" value="1" checked>
+            2<input type= "radio"  name = "rating" value="2">
+            3<input type= "radio" name = "rating" value="3">
+            4<input type= "radio" name = "rating" value="4">
+            5<input type= "radio" name = "rating" value="5">
+            <label for="expertise">Cooking Expertise</label>
+            <select id="expertise" name="expertise">
+           <option value="Select Cooking Expertise" disabled="true" selected ="true">Select Cooking Expertise </option>
+           <option value="sometimes">Sometimes Cook</option>
+           <option value="everyday">Cook Everyday</option>
+           <option value="hobby">Cooking is a Hobby</option>
+           <option value="profresh">Professional Chef</option>
+          </select>
+
+          <label>Review
+            <textarea name="Review" cols="30" rows="10"></textarea>
+          </label>
+          <input type="submit" value="Submit">
+
+        </form>
+      </section>
+
       <footer>
         <h4>Adapted from Minimalist Baker</h4>
-        <p> More info can be found at the website with even more delicious recipies. Per Dana's website, Minimalist Baker is a website devoted to simple cooking. All recipes require 10 ingredients or less, 1 bowl or 1 pot, or 30 minutes or less to prepare. 
+        <p> More info and even more delicious recipies at Dana's website. Per Dana's website, Minimalist Baker is a website devoted to simple cooking. All recipes require 10 ingredients or less, 1 bowl or 1 pot, or 30 minutes or less to prepare.
           <a href="http://minimalistbaker.com/simple-baba-ganoush/">Read More Recipies from Dana!</a>
         </p>
       </footer>
