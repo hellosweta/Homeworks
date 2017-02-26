@@ -21,7 +21,7 @@ input[type="radio"], input[type="select"],input[type="submit"]{
         outline: none;
     }
 input:last-child {
-  background-color: :gold;
+  background: gold;
 }
 input:last-child:hover {
   -webkit-filter: brightness(90%);
