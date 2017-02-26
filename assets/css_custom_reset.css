@@ -11,7 +11,8 @@ body {
   font: Arial, sans-serif;
   background-color: #FEFFF1;
 }
-input[type="radio"], input[type="select"],input[type="submit"]{
+
+input[type="radio"], input[type="select"]{
         -webkit-appearance: none;
         width: 27px;
         height: 27px;
@@ -20,6 +21,27 @@ input[type="radio"], input[type="select"],input[type="submit"]{
         vertical-align: bottom;
         outline: none;
     }
+input[type="select"]{
+  -webkit-appearance: none;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  vertical-align: bottom;
+  outline: none;
+}
+
+input[type = "submit"]{
+  -webkit-appearance: none;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  vertical-align: bottom;
+  outline: none;
+}
+input[type="radio"]:checked {
+  background-position: 30px 30px;
+}
+
 input:last-child {
   background: gold;
 }
@@ -28,7 +50,7 @@ input:last-child:hover {
 
 }
 ol li:nth-of-type(2n) {
-    background-color: light-grey;
+    background-color: whitesmoke;
 }
 
 h2 + .user_review {
