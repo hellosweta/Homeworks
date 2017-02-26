@@ -1,0 +1,43 @@
+html, body, header, aside, h1, h2, ul, li, ol, footer{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font: Arial, sans-serif;
+  background-color: #FEFFF1;
+}
+input[type="radio"], input[type="select"],input[type="submit"]{
+        -webkit-appearance: none;
+        width: 27px;
+        height: 27px;
+        cursor: pointer;
+        background-image: url(../assets/stars.png);
+        vertical-align: bottom;
+        outline: none;
+    }
+input:last-child {
+  background-color: :gold;
+}
+input:last-child:hover {
+  -webkit-filter: brightness(90%);
+
+}
+ol li:nth-of-type(2n) {
+    background-color: light-grey;
+}
+
+h2 + .user_review {
+  border-top: : 1px solid black;
+}
+
+/*Reset only the elements that you have on the page.
+Set the cursor:pointer and outline:none properties for all radio buttons, select elements, and submit buttons.
+Style the background-color of the submit button gold using the last-child selector and give it a darkening hover effect.
+Color every other list element in the directions list with a light-grey background.
+Use the + operator to select the first review preceding the Reviews header element and give it a 1px, solid, black, top border.
+Style the radio buttons with stars! Use the stars.png file in the assets folder.*/

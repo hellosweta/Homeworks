@@ -5,9 +5,9 @@
     </title>
     <meta name="description" content="The best, simple recipe for delicious Middle Eastern baba ganoush that uses eggplant and tahini">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./css_reset.css" type="text/css"/>
-<link rel="stylesheet" href="./css_syntax.css" type="text/css"/>
-  <script src="../../assets/external_javascript_example.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="assets/css_custom_reset.css" type="text/css"/>
+<link rel="stylesheet" href="assets/css_syntax.css" type="text/css"/>
+  <script src="assets/external_javascript_example.js" type="text/javascript"></script>
 
     <header>
       <img
@@ -77,13 +77,16 @@
           <form id="review-form" action="/reviews"method="post">
             <label for="name">Name</label>
             <input type="text" id="name" name = "name">
+            <br>
             <label for="rating">Rating</label>
             1<input type= "radio" name = "rating" value="1" checked>
             2<input type= "radio"  name = "rating" value="2">
             3<input type= "radio" name = "rating" value="3">
             4<input type= "radio" name = "rating" value="4">
             5<input type= "radio" name = "rating" value="5">
+            <br>
             <label for="expertise">Cooking Expertise</label>
+            <br>
             <select id="expertise" name="expertise">
            <option value="Select Cooking Expertise" disabled="true" selected ="true">Select Cooking Expertise </option>
            <option value="sometimes">Sometimes Cook</option>
@@ -91,11 +94,14 @@
            <option value="hobby">Cooking is a Hobby</option>
            <option value="profresh">Professional Chef</option>
           </select>
-
+            <br>
           <label>Review
+            <br>
             <textarea name="Review" cols="30" rows="10"></textarea>
-          </label>
-          <input type="submit" value="Submit">
+            <br>
+          <label for="">  <input type="submit" value="Submit"></label>
+
+
 
         </form>
       </section>
