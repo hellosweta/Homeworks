@@ -1,4 +1,4 @@
-html, body, header, aside, h1, h2, ul, li, ol, footer{
+html, body, div, span, h1, h2, h3, h4, a, ol, ul, li, form, label, article, aside, figure, figcaption, footer, header, nav {
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,58 +8,24 @@ html, body, header, aside, h1, h2, ul, li, ol, footer{
 }
 
 body {
-  font: Arial, sans-serif;
-  background-color: #FEFFF1;
+  line-height: 1.5;
 }
 
-input[type="radio"], input[type="select"]{
-        -webkit-appearance: none;
-        width: 27px;
-        height: 27px;
-        cursor: pointer;
-        background-image: url(../assets/stars.png);
-        vertical-align: bottom;
-        outline: none;
-    }
-input[type="select"]{
-  -webkit-appearance: none;
-  width: 27px;
-  height: 27px;
+ol, ul {
+  list-style: none;
+}
+
+input[type="radio"], select, input[type="submit"] {
   cursor: pointer;
-  vertical-align: bottom;
   outline: none;
-}
-
-input[type = "submit"]{
-  -webkit-appearance: none;
-  width: 27px;
-  height: 27px;
-  cursor: pointer;
-  vertical-align: bottom;
-  outline: none;
-}
-input[type="radio"]:checked {
-  background-position: 30px 30px;
-}
-
-input:last-child {
-  background: gold;
-}
-input:last-child:hover {
-  -webkit-filter: brightness(90%);
-
-}
-ol li:nth-of-type(2n) {
-    background-color: whitesmoke;
 }
 
 h2 + .user_review {
-  border-top: : 1px solid black;
+  border-top: 1px solid black;
 }
 
-/*Reset only the elements that you have on the page.
-Set the cursor:pointer and outline:none properties for all radio buttons, select elements, and submit buttons.
-Style the background-color of the submit button gold using the last-child selector and give it a darkening hover effect.
-Color every other list element in the directions list with a light-grey background.
-Use the + operator to select the first review preceding the Reviews header element and give it a 1px, solid, black, top border.
-Style the radio buttons with stars! Use the stars.png file in the assets folder.*/
+/* This is useful when implementing a grid system so that all image elements
+will take up 100% width of their containers */
+img {
+  width: 100%
+}
