@@ -1,18 +1,17 @@
-"use strict";
 const path = require('path');
 
 module.exports = {
   context: __dirname,
-  entry: "./frontend/entry.jsx",
+  entry: './giphy_search.jsx',
   output: {
     path: path.resolve(__dirname),
-    filename: "bundle.js"
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
       {
-        test: [/\.jsx?$/, [/\.js?$/]],
-        exclude: /(node_modules|bower_components)/,
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015']
@@ -20,8 +19,8 @@ module.exports = {
       }
     ]
   },
-  devtool: 'source-maps',
   resolve: {
-    extensions: [".js", '.jsx', '*'],
-  }
+    extensions: ['.js', '.jsx', '*']
+  },
+  devtool: 'source-map'
 };
